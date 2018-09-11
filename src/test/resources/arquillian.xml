@@ -4,6 +4,6 @@
 <property name="env.init.enabled">true</property>
 <property name="enableImageStreamDetection">false</property>
 <property name="env.dependencies">file://${basedir}/target/test-classes/test-configmap.yml</property>
-<property name="app.name">sample2</property>
+<property name="app.name">josephus</property>
 </extension>
 </arquillian>
