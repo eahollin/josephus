@@ -8,15 +8,15 @@
   </parent>
 
   <artifactId>josephus</artifactId>
-
   <groupId>com.edwardhollingsworth.msa</groupId>
   <version>0.0.1</version>
 
-  <name>Spring Boot - ConfigMap Booster</name>
-  <description>Spring Boot - ConfigMap Booster</description>
+  <name>Josephus</name>
+  <description>Based upon Red Hat's Spring Boot - ConfigMap Booster</description>
 
   <properties>
     <openshift-client.version>3.1.8</openshift-client.version>
+    <spring-kafka.version>1.3.2.RELEASE</spring-kafka.version>
   </properties>
 
   <dependencies>
@@ -27,6 +27,13 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    
+    <!-- Kafka integration -->
+    <dependency>
+      <groupId>org.springframework.kafka</groupId>
+      <artifactId>spring-kafka</artifactId>
+      <version>${spring-kafka.version}</version>
     </dependency>
 
     <!-- Testing -->
